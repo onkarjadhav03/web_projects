@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #0077b6;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ul{
+    list-style: none; 
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+}
+a{
+    text-decoration: none;
+    color: white;
+ }
+ li{
+    padding : 14px 0px;
+ }
+
+
+ @media screen and (max-width:580px) {
+    nav{
+        flex-direction: column;
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+ }
+
+
+ /* navbar css ends here */ 
+
+section{
+    width:75vw;
+    margin: 50px auto;   
+    /* border: 1px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+figure{
+    width: 300px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 200ms;
+    transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+    box-shadow: 5px 2px 5px rgb(104,104,104);
+}
+
+figure img{
+    height: 230px;
+    width: 95%;
+    padding: 10px;
+}
+ h2{
+    font-size: 24px;
+ }
+
+ button{
+    font-size: 20px;
+    padding: 3px 8px;
+    margin-bottom: 5px;
+    background-color: none;
+    transition: background-color 500ms;
+ }
+ button:hover{
+    cursor: pointer;
+    background-color: #0077b6;
+    color: white;
+ }
+
+ figure:hover{
+    transform: scale(1.02);
+ }

@@ -1,0 +1,46 @@
+body{
+    perspective: 800px;
+}
+
+div{
+    height: 250px;
+    width: 400px;
+    border: 1px solid #ccc;
+}
+
+.wrapper{
+    position: relative;
+    transition: 1s;
+    cursor: pointer;
+    margin: 30px auto;
+    transform-style: preserve-3d;
+}
+  
+.side-a{
+    background-color: lightcoral;
+    z-index: 1;
+}
+
+.side-a img{
+    height: 100%;
+    width: 100%;
+}
+
+.side-b{
+    background-color: lightblue;
+    transform: rotateY(180deg);
+    padding: 16px;
+}
+.side-a,.side-b{
+    position: absolute;
+    backface-visibility: hidden;
+
+}
+
+h2{
+    text-align: center;
+}
+
+.wrapper:hover{
+    transform: rotateY(180deg);
+}
